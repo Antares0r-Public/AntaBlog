@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <h1>Hello, Express + TypeScript!</h1>
-    <button onclick="fetchAPI()">Fetch API</button>
-    <p id="apiResponse"></p>
+    <div id="topBar">
+        <h1>AntaBlog</h1>
+    </div>
 
+    <script src="/js/index.js"></script>
     <script>
-        async function fetchAPI() {
-            const res = await fetch('/api/hello');
-            const data = await res.json();
-            document.getElementById('apiResponse').innerText = data.message;
-        }
+        // For noted idk
+        // async function fetchAPI() {
+        //     const res = await fetch('/api/hello');
+        //     const data = await res.json();
+        //     document.getElementById('apiResponse').innerText = data.message;
+        // }
     </script>
 </body>
 </html>
