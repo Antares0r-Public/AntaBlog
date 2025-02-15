@@ -21,6 +21,14 @@ app.get('/about', (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, '../public/pages/about.html'));
 });
 
+app.get('/services', (req: Request, res: Response) => {
+    res.sendFile(path.join(__dirname, '../public/pages/services.html'));
+});
+
+app.get('/contact', (req: Request, res: Response) => {
+    res.sendFile(path.join(__dirname, '../public/pages/contact.html'));
+});
+
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
