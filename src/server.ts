@@ -17,6 +17,10 @@ app.get('/api/hello', (req: Request, res: Response) => {
     res.json({ message: 'Hello from your TypeScript Express server!' });
 });
 
+app.get('/about', (req: Request, res: Response) => {
+    res.sendFile(path.join(__dirname, '../public/pages/about.html'));
+});
+
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
